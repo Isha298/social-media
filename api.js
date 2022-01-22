@@ -3,14 +3,14 @@ const client =require('./connection.js')
 const express = require('express');
 const app = express();
 const jwt = require('jsonwebtoken');
-
+app.set('port',process.env.PORT||3000);
 app.use(express.json())
 dotenv.config();
 console.log(process.env.ACCESS_TOKEN_SECRET);
 
 
-app.listen(3300, ()=>{
-    console.log("Server is now listening at port 3300");
+app.listen(3000, ()=>{
+    console.log("Server is now listening at port 3000");
 }
 )
 client.connect();
