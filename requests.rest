@@ -1,0 +1,27 @@
+
+
+POST http://localhost:3300/login
+Content-Type: application/json
+
+{
+    "username":"bkhjg_121"
+}
+
+####
+
+
+POST http://localhost:3300/users
+Content-Type: application/json
+
+{
+    "email": "abc@fgjjgjgjhjhoo.com",
+     "password":"nbhbbhbh12"
+}
+
+###
+POST http://localhost:3300/follow
+Content-Content-Type: application/json
+
+{
+    "followers":"2"
+}
